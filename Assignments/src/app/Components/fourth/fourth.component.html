@@ -1,0 +1,10 @@
+<button routerLink="">Home</button>
+<h2>Panel X</h2>
+<button (click)="addComponentX()">Add Component X</button>
+<div *ngFor="let componentX of componentsX; let xIndex = index">
+  <app-component-x
+    [panelName]="'Panel X ' + (xIndex + 1)"
+    (addComponentY)="addComponentY(xIndex)"
+    (removeComponentX)="removeComponentX(xIndex)"
+  ></app-component-x>
+</div>

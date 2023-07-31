@@ -1,0 +1,72 @@
+#first-div,#second-div,#fourth-div,#fifth-div{
+    height: 100px;
+    width: 100px;
+    background-color:black;
+    color:white;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    border: 2px solid #333;
+  }
+  
+  .corner {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+  }
+  
+  .top {
+    top: 0;
+  }
+  
+  .bottom {
+    bottom: 0;
+  }
+  
+  .left {
+    left: 0;
+  }
+  
+  .right {
+    right: 0;
+  }
+  
+  .top.left {
+    /* Positioned at top left corner */
+  }
+  
+  .top.right {
+    /* Positioned at top right corner */
+  }
+  
+  .bottom.left {
+    /* Positioned at bottom left corner */
+  }
+  
+  .bottom.right {
+    /* Positioned at bottom right corner */
+  }
+  
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+  
+  }
+  

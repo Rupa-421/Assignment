@@ -1,0 +1,10 @@
+<button routerLink="">Home</button>
+<div class="container">
+   <h3> Enter an index to find the value of the series at that index:<br>
+   </h3>
+   <input type="text" [(ngModel)]="seriesNumber">
+<button type="submit" (click)="findNumber()">Find the value</button>
+<div *ngIf="valueAtIndex!=0">
+    Value at that index is {{valueAtIndex}}
+</div>
+</div>

@@ -1,0 +1,15 @@
+<button routerLink="">Home</button>
+<div class="container">
+  <form (ngSubmit)="onSubmit()">
+    <div *ngFor="let contact of contacts; let i = index">
+      <div>
+        <label>Contact {{ i + 1 }}</label>
+        <input type="text" [(ngModel)]="contacts[i].number" name="number{{ i }}" />
+        <button *ngIf="contacts.length > 1" (click)="removeContact(i)">Remove</button>
+      </div>
+    </div>
+    <button (click)="addContact()">Add Another Number</button>
+    <button type="submit">Submit</button>
+  </form>
+  
+</div>

@@ -1,0 +1,8 @@
+<div class="component-x">
+    <h3>{{ panelName }}</h3>
+    <button (click)="addComponentY()">+</button>
+    <div *ngFor="let componentY of componentsY; let yIndex = index">
+      <app-component-y [panelName]="panelName + ' - Component Y ' + (yIndex + 1)"></app-component-y>
+    </div>
+    <button (click)="removeComponentX.emit()">Remove Panel</button>
+  </div>
